@@ -96,26 +96,28 @@ select {
     border: 0;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 .search-bar form input[type="submit"] {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
     border: 0;
     background: #f49ac1;
     color: white;
-    padding: 10px 20px;
+    padding: 7px 20px;
     border-radius: 10px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.22);
     cursor: pointer;
     text-transform: uppercase;
+    transition: backgrond .2s ease-in-out, color .2s ease-in-out;
 }
+
+
 .search-bar select:focus {
     outline: 0;
 }
-.search-bar select option:hover {
-    background: red;
-    box-shadow: inset 20px 20px #00f;
-}
+
 .h1-cont h1 {
     text-align: center;
     font-size: 18px;
@@ -216,7 +218,20 @@ body {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.22);
     cursor: pointer;
     margin-top: 35px;
+     transition: background  .2s ease-in-out, color .2s ease-in-out;
 }
+
+.free-but button:hover,
+.search-bar form input[type="submit"]:hover {
+    background: #fff;
+    color: #f49ac1;
+}
+
+input[type="submit"],
+button:focus {
+  outline:0;
+}
+
 .top-cat > .h1-cont {
     margin-top: 100px;
 }
@@ -228,6 +243,12 @@ body {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.22);
     overflow: hidden;
     margin-bottom: 35px;
+    transition: all .2s;
+}
+
+.single-cat:hover {
+    transform: translateY(-2px);
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.22); 
 }
 .cat-row {
     width: 90%;
@@ -235,7 +256,7 @@ body {
 }
 .cat-title {
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 46px;
     color: #212121;
@@ -268,10 +289,14 @@ body {
      color: #212121;
 }
 .pro-cont .free-but button {
-    background-color: #c6eeeb;
+    background: #c6eeeb;
     color: #212121;
+    transition: all .2s ease-in-out;
 } 
-
+.pro-cont .free-but button:hover {
+    background: #fff;
+    color: #c6eeeb;
+}
 footer {
     background-image: url(../images/pink-dots.jpg);
 }
@@ -318,4 +343,7 @@ ul.socials {
     color: #757575;
     line-height: 24px;
 }
-
+nav#mobile-menu,
+.toggle-menu {
+    display: none;
+}

@@ -9,9 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=greek" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 
 <body>
+
     <header>
         <div class="main-menu">
             <figure class="logo">
@@ -29,6 +31,24 @@
                     </li>
                 </ul>
             </nav>
+
+            <div class="toggle-menu">
+                <input type="checkbox" id="mobile">
+                <label for="mobile">Menu</label>
+                <nav id="mobile-menu">
+                    <ul>
+                        <li>
+                            <a href="/">Εγγραφη μελλονυμφου</a></li>
+                        <li><a href="/">Εγγραφη επαγγελματια</a></li>
+                        <li class="login-item">
+                            <a href="/">
+                                <figure class="login-icon"><img src="images/login.png" alt="ΕΙΣΟΔΟΣ"></figure> Εισοδος
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
             <div class="clearfix"></div>
         </div>
 
@@ -94,33 +114,45 @@
 
         <div class="top-cat">
             <div class="h1-cont">
-                <h1>Πως λειτουργεί;</h1>
+                <h1>Δημοφιλείς Υπηρεσίες</h1>
                 <div class="dash"></div>
             </div>
             <div class="cat-row">
+                <a href="#">
+                    <div class="single-cat">
+                        <div class="cat-img" style="background-image:url(images/OBFLFM0.jpg)"></div>
+                        <div class="cat-title">Φωτογραγοι</div>
+                    </div>
+                </a>
                 <div class="single-cat">
-                    <div class="cat-img" style="background-image:url(images/OBFLFM0.jpg)"></div>
-                    <div class="cat-title">Φωτογραγοι</div>
+                    <a href="#">
+                        <div class="cat-img" style="background-image:url(images/OBFLIS0.jpg)"></div>
+                        <div class="cat-title">προσκλητήρια</div>
+                    </a>
                 </div>
                 <div class="single-cat">
-                    <div class="cat-img" style="background-image:url(images/OBFLFM0.jpg)"></div>
-                    <div class="cat-title">Φωτογραγοι</div>
+                    <a href="#">
+                        <div class="cat-img" style="background-image:url(images/OBFN5R0.jpg)"></div>
+                        <div class="cat-title">ΚΤΗΜΑΤΑ ΔΕΞΙΩΣΕΩΝ</div>
+                    </a>
                 </div>
                 <div class="single-cat">
-                    <div class="cat-img" style="background-image:url(images/OBFLFM0.jpg)"></div>
-                    <div class="cat-title">Φωτογραγοι</div>
+                    <a href="#">
+                        <div class="cat-img" style="background-image:url(images/OBFN8O0.jpg)"></div>
+                        <div class="cat-title">Make Up Artists</div>
+                    </a>
                 </div>
                 <div class="single-cat">
-                    <div class="cat-img" style="background-image:url(images/OBFLFM0.jpg)"></div>
-                    <div class="cat-title">Φωτογραγοι</div>
+                    <a href="#">
+                        <div class="cat-img" style="background-image:url(images/OBFN930.jpg)"></div>
+                        <div class="cat-title">Hair Styling</div>
+                    </a>
                 </div>
                 <div class="single-cat">
-                    <div class="cat-img" style="background-image:url(images/OBFLFM0.jpg)"></div>
-                    <div class="cat-title">Φωτογραγοι</div>
-                </div>
-                <div class="single-cat">
-                    <div class="cat-img" style="background-image:url(images/OBFLFM0.jpg)"></div>
-                    <div class="cat-title">Φωτογραγοι</div>
+                    <a href="#">
+                        <div class="cat-img" style="background-image:url(images/ValentinesDay-09.jpg)"></div>
+                        <div class="cat-title">DJs</div>
+                    </a>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -150,8 +182,8 @@
 
             </div>
         </div>
-        
-         <div class="pro-cont">
+
+        <div class="pro-cont">
             <div class="how-steps">
                 <div class="birds">
                     <figure>
@@ -160,8 +192,7 @@
                 </div>
                 <div class="parag">
                     <h1>Είσαι επαγγελματίας;</h1>
-                    <p>Γίνε μέλος της επίλεκτης ομάδας
-επαγγελματιών του Theweddingexperts.gr</p>
+                    <p>Γίνε μέλος της επίλεκτης ομάδας επαγγελματιών του Theweddingexperts.gr</p>
                 </div>
                 <div class="free-but">
                     <button>μαθε περισσοτερα</button>
@@ -173,32 +204,34 @@
 
     </div>
     <footer>
-   
-    <ul class="socials">
-        <li class="fb">
-            <a href="#">
-                <div class="social-icom"></div>
-            </a>
-        </li>
-        <li class="tw">
-                        <a href="#">
-                            <div class="social-icom"></div>
-                        </a>
 
-        </li>
-        <li class="g-plus">
-                        <a href="#">
-                            <div class="social-icom"></div>
-                        </a>
+        <ul class="socials">
+            <li class="fb">
+                <a href="#">
+                    <div class="social-icom"></div>
+                </a>
+            </li>
+            <li class="tw">
+                <a href="#">
+                    <div class="social-icom"></div>
+                </a>
 
-        </li>
-        <li class="in">
-                        <a href="#"><div class="social-icom"></div></a>
+            </li>
+            <li class="g-plus">
+                <a href="#">
+                    <div class="social-icom"></div>
+                </a>
 
-        </li>
-    </ul>
-   
-    <div class="copy">© 2017 - My ASP.NET Application</div>
+            </li>
+            <li class="in">
+                <a href="#">
+                    <div class="social-icom"></div>
+                </a>
+
+            </li>
+        </ul>
+
+        <div class="copy">© 2017 - My ASP.NET Application</div>
     </footer>
 </body>
 
