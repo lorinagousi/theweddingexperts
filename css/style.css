@@ -1,5 +1,10 @@
 * {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Comfortaa', cursive;
+}
+input[type="submit"],
+button,
+nav a {
+    font-family: 'Roboto', sans-serif;
 }
 html,
 body,
@@ -14,7 +19,7 @@ body {
     height: 100%;
 }
 .logo {
-    width: 50%;
+    width: 25%;
     float: left;
     margin-top: 15px;
 }
@@ -22,9 +27,9 @@ body {
     max-width: 200px;
 }
 nav {
-    width: 50%;
+    width: 75%;
     float: left;
-    text-align: center;
+    text-align: right;
     display: block;
     top: 40px;
     margin-top: 25px;
@@ -65,6 +70,7 @@ header ul li a {
     color: #757575;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 header ul li a:hover {
@@ -90,18 +96,18 @@ a {
 select {
     color: #757575;
 }
-.search-bar select {
-    font-size: 16px;
-    padding: 7px 20px;
+.search-bar input[type="text"] {
     border: 0;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 500px;
+    font-size: 18px;
+    padding: 8px 20px;
 }
 .search-bar form input[type="submit"] {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     border: 0;
     background: #f49ac1;
     color: white;
@@ -110,14 +116,13 @@ select {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.22);
     cursor: pointer;
     text-transform: uppercase;
+    -webkit-transition: backgrond .2s ease-in-out, color .2s ease-in-out;
     transition: backgrond .2s ease-in-out, color .2s ease-in-out;
 }
-
-
+input[type="text"]:focus,
 .search-bar select:focus {
     outline: 0;
 }
-
 .h1-cont h1 {
     text-align: center;
     font-size: 18px;
@@ -208,7 +213,7 @@ body {
 }
 .free-but button {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     border: 0;
     background: #f49ac1;
@@ -218,20 +223,18 @@ body {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.22);
     cursor: pointer;
     margin-top: 35px;
-     transition: background  .2s ease-in-out, color .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out, color .2s ease-in-out;
+    transition: background .2s ease-in-out, color .2s ease-in-out;
 }
-
 .free-but button:hover,
 .search-bar form input[type="submit"]:hover {
     background: #fff;
     color: #f49ac1;
 }
-
 input[type="submit"],
 button:focus {
-  outline:0;
+    outline: 0;
 }
-
 .top-cat > .h1-cont {
     margin-top: 100px;
 }
@@ -243,12 +246,13 @@ button:focus {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.22);
     overflow: hidden;
     margin-bottom: 35px;
+    -webkit-transition: all .2s;
     transition: all .2s;
 }
-
 .single-cat:hover {
+    -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
-        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.22); 
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.22);
 }
 .cat-row {
     width: 90%;
@@ -282,17 +286,16 @@ button:focus {
     border-bottom: 2px solid #ff9fb9;
     margin-bottom: 100px;
     background-color: #fff;
-   
 }
-
 .pro-cont .parag {
-     color: #212121;
+    color: #212121;
 }
 .pro-cont .free-but button {
     background: #c6eeeb;
     color: #212121;
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-} 
+}
 .pro-cont .free-but button:hover {
     background: #fff;
     color: #c6eeeb;
@@ -300,10 +303,9 @@ button:focus {
 footer {
     background-image: url(../images/pink-dots.jpg);
 }
-
 ul.socials {
     list-style: none;
-        text-align: center;
+    text-align: center;
     position: relative;
     padding-top: 100px;
     padding-bottom: 150px;
@@ -311,32 +313,25 @@ ul.socials {
 .socials li {
     display: inline-block;
 }
-
 .socials a .social-icom {
-        width: 37px;
+    width: 37px;
     height: 36px;
     background-image: url(../images/social.png);
     background-repeat: no-repeat;
-        background-size: cover;
-
+    background-size: cover;
 }
 .fb .social-icom {
     background-position: 0 0;
 }
-
-
 .tw .social-icom {
-   background-position: -46px 0;
+    background-position: -46px 0;
 }
-
 .g-plus .social-icom {
     background-position: -91px 0;
 }
-
 .in .social-icom {
     background-position: -137px 0;
 }
-
 .copy {
     text-align: center;
     font-size: 14px;
