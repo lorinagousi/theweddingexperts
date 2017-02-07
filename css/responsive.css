@@ -1,42 +1,93 @@
-@media screen and (max-width:768px) {
-    nav {
-        display: none;
-    }
-    .main-menu {
-        text-align: center;
-    }
-    .logo {
-        width: 100%;
-        float: none;
-        margin-top: 0;
-        padding-top: 10px;
-    }
-    .logo img {
-        max-width: 170px;
-    }
-    nav#mobile-menu,
-    .toggle-menu {
-        display: block;
-    }
-    #mobile-menu {
-        position: fixed;
-        width: 80%;
-        height: 100%;
-        background: #ffdaea;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        margin: 0;
-        box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.22);
-            transform: translateX(-102%);
-    }
-    
-    #mobile:checked  ~ nav#mobile-menu {
-           transform: translateX(0%) !important;
-    }
-    
-    #mobile {
-        display: none;
-    }
-
-}
+        @media screen and (max-width:768px) {
+            nav,
+            #mobile,
+            .dashed-border {
+                display: none;
+            }
+            .main-menu {
+                text-align: center;
+                position: fixed;
+                width: 100%;
+                z-index: 999;
+                padding: 0;
+            }
+            .logo {
+                width: 100%;
+                float: none;
+                margin-top: 0;
+                padding-top: 10px;
+            }
+            .logo img {
+                max-width: 170px;
+            }
+            #mobile-menu,
+            .toggle-menu {
+                display: block;
+            }
+            #mobile:checked ~ nav#mobile-menu {
+                display: block;
+                box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+            }
+            .search-bar input[type="text"] {
+                width: auto;
+                max-width: none;
+            }
+            .step {
+                width: 100%;
+                float: none;
+                margin: 0 0 35px 0;
+            }
+            .step p {
+                width: 80%;
+                margin-top: 15px;
+            }
+            .birds {
+                float: none;
+                width: 100%;
+                padding-top: 35px;
+            }
+            .birds figure {
+                margin-top: 0;
+            }
+            .parag {
+                width: 100%;
+                float: none;
+                color: white;
+                text-align: center;
+            }
+            .free-but {
+                float: none;
+                width: 100%;
+                padding-bottom: 35px;
+            }
+            .cat-img {
+                height: 180px;
+            }
+            .single-cat {
+                width: 49%;
+            }
+            #mobile-menu {
+                width: 100%;
+                float: none;
+                text-align: center;
+                display: block;
+                top: 0;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                border-top: 1px solid #ffdaea;
+                padding-top: 20px;
+                display: none;
+            }
+            header ul li {
+                display: block;
+            }
+            header ul li a {
+                line-height: 32px;
+            }
+            .login-item {
+                padding-left: 0;
+            }
+            .toggle-menu {
+                padding-bottom: 10px;
+            }
+        }
