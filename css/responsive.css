@@ -1,10 +1,9 @@
 @media screen and (max-width:768px) {
+    .login-icon,
     nav {
         display: none;
     }
-    .main-menu {
-        text-align: center;
-    }
+  
     .logo {
         width: 100%;
         float: none;
@@ -14,12 +13,12 @@
     .logo img {
         max-width: 170px;
     }
-    nav#mobile-menu,
+   
     .toggle-menu {
         display: block;
     }
     #mobile-menu {
-        position: fixed;
+        /* position: fixed;
         width: 80%;
         height: 100%;
         background: #ffdaea;
@@ -28,15 +27,37 @@
         z-index: 999;
         margin: 0;
         box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.22);
-            transform: translateX(-102%);
+            transform: translateX(-102%);*/
+        width: 100%;
+        border-top: 1px solid #ffdaea;
+        margin: 0;
+        padding-top: 20px;
+        margin-top: 10px;
+        padding-bottom: 20px;
+           transform:transform: translateY(-140%);
+    display: none ;
+    }
+    #mobile:checked + nav#mobile-menu {
+        transform: translatey(0%) !important;
+        display: block;
     }
     
-    #mobile:checked  ~ nav#mobile-menu {
-           transform: translateX(0%) !important;
+    header ul li {
+        display: block;
+        margin: 0 10px;
     }
-    
-    #mobile {
-        display: none;
-    }
+    .main-menu {
+        padding: 0;
+            position: fixed;
+    width: 100%;
+    z-index: 999;
+                text-align: center;
 
+    }
+    #mobile-menu a {
+        line-height: 30px;
+    }
+    .login-item {
+        padding-left: 0;
+    }
 }
