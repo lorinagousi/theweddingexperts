@@ -196,7 +196,7 @@ body {
 }
 .birds figure {
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .free-but {
     float: right;
