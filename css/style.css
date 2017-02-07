@@ -75,7 +75,6 @@ header ul li a {
 }
 header ul li a:hover {
     color: #443e3f;
-    font-weight: 600;
 }
 a {
     text-decoration: none;
@@ -291,6 +290,7 @@ button:focus {
 }
 .pro-cont .parag {
     color: #212121;
+    line-height: 24px;
 }
 .pro-cont .free-but button {
     background: #c6eeeb;
