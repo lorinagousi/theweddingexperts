@@ -75,6 +75,7 @@ header ul li a {
 }
 header ul li a:hover {
     color: #443e3f;
+    font-weight: 600;
 }
 a {
     text-decoration: none;
@@ -210,6 +211,7 @@ body {
 }
 .parag h1 {
     font-size: 24px;
+    padding-top: 10px;
 }
 .free-but button {
     font-size: 16px;
