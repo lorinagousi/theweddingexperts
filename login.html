@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Καλώς ήρθατε στο Theweddingexperts.gr</title>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Roboto:300,400,500,700&amp;subset=greek,greek-ext,latin-ext" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
@@ -55,9 +55,14 @@
 
     </header>
 
+
+
+
     <div class="main">
         <div class="forms-cont">
+            <input type="radio" name="form" id="ch-login" checked>
             <div class="form-login">
+                <label for="ch-register">Εγγραφή</label>
                 <h2>Σύνδεση</h2>
                 <figure>
                     <img src="images/login-item.png">
@@ -66,33 +71,48 @@
                     <input type="email" placeholder="Email">
                     <input type="password" placeholder="Κωδικός">
 
-                    <input type="checkbox" value="remember" name="remember" id="remember">
-                    <label for="remember">Αποθήκευση κωδικού</label>
 
-                    <a href="#">Ξέχασες τον κωδικό σου;</a>
+                    <div class="remember-lost">
+
+                        <input type="checkbox" value="remember" name="remember" id="remember">
+                        <label for="remember" aria-hidden="true">Αποθήκευση κωδικού</label>
+
+                        <a href="#">Ξέχασες τον κωδικό σου;</a>
+                    </div>
                     <input type="submit" value="Είσοδος">
                 </form>
 
             </div>
             <div class="arrow">
+
                 <figure>
                     <img src="images/arrow.png">
                 </figure>
             </div>
+            <input type="radio" name="form" id="ch-register">
             <div class="form-reg form-login">
-                <h2>Σύνδεση</h2>
+                <label for="ch-login">Σύνδεση</label>
+                <h2>Εγγραφή</h2>
+                <p>Δημιούργησε νέο λογαριασμό.</p>
                 <figure>
-                    <img src="images/login-item.png">
+                    <img src="images/reg-item.png">
                 </figure>
                 <form action="">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Κωδικός">
+                    <div class="form-left">
+                        <input class="name" type="text" placeholder="Όνομα">
+                        <input type="text" placeholder="Επώνυμο">
+                        <input type="text" placeholder="Τηλέφωνο επικοινωνίας">
+                    </div>
+                    <div class="form-right">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Κωδικός">
+                        <input type="password" placeholder="Επαλήθευση κωδικού">
+                    </div>
 
-                    <input type="checkbox" value="remember" name="remember" id="remember">
-                    <label for="remember">Αποθήκευση κωδικού</label>
 
-                    <a href="#">Ξέχασες τον κωδικό σου;</a>
-                    <input type="submit" value="Είσοδος">
+
+                    <div class="clearfix"></div>
+                    <input class="register-btn" type="submit" value="Εγγραφή">
                 </form>
 
             </div>

@@ -1,3 +1,15 @@
+@font-face {
+    font-family: fa;
+    src: url(../fonts/FontAwesome.otf);
+    src: url('../fonts/fontawesome-webfont.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/fontawesome-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/fontawesome-webfont.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+}
 * {
     font-family: 'Comfortaa', cursive;
 }
@@ -123,7 +135,8 @@ select {
 }
 input[type="text"]:focus,
 input:focus,
-.search-bar select:focus {
+.search-bar select:focus,
+label:focus {
     outline: 0;
 }
 .h1-cont h1 {
@@ -363,7 +376,7 @@ nav#mobile-menu,
     background: #fff;
 }
 .arrow {
-    width: 10%;
+    width: 5%;
     float: left;
     text-align: center;
 }
@@ -371,7 +384,7 @@ nav#mobile-menu,
     margin-top: 80px;
 }
 .form-reg {
-    width: 54%;
+    width: 59%;
     float: left;
 }
 .form-login h2 {
@@ -379,36 +392,38 @@ nav#mobile-menu,
     font-size: 18px;
     text-transform: uppercase;
 }
-.form-login input[type="email"] {
+.form-login input[type="email"],
+.form-reg input[type="text"].name {
     display: block;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.form-login input[type="password"] {
+.form-login input[type="password"],
+.form-reg input[type="text"] {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
 }
 .form-login input[type="email"],
-.form-login input[type="password"] {
+.form-login input[type="password"],
+.form-reg input[type="text"] {
     border: 1pt solid rgba(195, 184, 185, .4);
-    border: 1pt solid rgda();
     font-size: 14px;
     padding: 10px 15px;
     border-radius: 10px;
-    width: 100%;
-    max-width: 240px;
+    max-width: 210px;
 }
 label[for="remember"],
 .form-login a {
     font-size: 12px;
     display: block;
     text-align: left;
-    max-width: 230px;
-    margin: 0 auto;
+    margin-left: 20px;
     margin-bottom: 10px;
     color: #afafaf;
+    cursor: pointer;
+    padding-left: 20px;
 }
 .form-login a {
     color: #443e3f;
@@ -438,4 +453,52 @@ label[for="remember"],
 .form-login input[type="submit"]:hover {
     background: #fff;
     color: #f49ac1;
+}
+.form-reg p {
+    font-size: 12px;
+}
+.form-left,
+.form-right {
+    float: left;
+    width: 46%;
+}
+.form-left {
+    margin-left: 4%;
+}
+.form-reg input[type="submit"].register-btn {
+    color: #212121;
+    background: #c6eeeb;
+}
+.form-reg input[type="submit"].register-btn:hover {
+    background: #fff;
+    color: #c6eeeb;
+}
+label[for="remember"] {
+    position: relative;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+}
+label[for="remember"]::before {
+    content: "\f1db";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+input#remember:checked + label[for="remember"]::before {
+    content: "\f192";
+    position: absolute;
+    color: #ff9fb9;
+}
+input#remember:checked + label[for="remember"] {
+    color: #ff9fb9;
+}
+.remember-lost {
+    max-width: 240px;
+    margin: 0 auto;
+}
+input#ch-login,
+input#ch-register,
+label[for="ch-login"],
+label[for="ch-register"] {
+    display: none;
 }
