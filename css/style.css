@@ -502,3 +502,36 @@ label[for="ch-login"],
 label[for="ch-register"] {
     display: none;
 }
+
+/*Success*/
+
+.success-cont {
+    text-align: center;
+    margin: 150px 0;
+}
+.success {
+    margin-top: 50px;
+}
+.arrows-bg {
+    background-image: url(../images/sucs-arrow.png);
+    background-repeat: repeat-x;
+    height: 5px;
+    background-position: center;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: -40px;
+}
+.success h1 {
+    background: #fafafa;
+    position: relative;
+    max-width: 189px;
+    margin: 24px auto;
+    font-size: 24px;
+    color: #c5edeb;
+    font-weight: 600;
+}
+.success p {
+    margin-top: 100px;
+    font-size: 16px;
+    color: #443e3f;
+}
