@@ -13,6 +13,9 @@
 * {
     font-family: 'Comfortaa', cursive;
 }
+*:focus {
+    outline: 0;
+}
 input[type="submit"],
 button,
 nav a {
@@ -132,12 +135,6 @@ select {
     text-transform: uppercase;
     -webkit-transition: background .2s ease-in-out, color .2s ease-in-out;
     transition: background .2s ease-in-out, color .2s ease-in-out;
-}
-input[type="text"]:focus,
-input:focus,
-.search-bar select:focus,
-label:focus {
-    outline: 0;
 }
 .h1-cont h1 {
     text-align: center;
@@ -407,7 +404,8 @@ nav#mobile-menu,
 }
 .form-login input[type="email"],
 .form-login input[type="password"],
-.form-reg input[type="text"] {
+.form-reg input[type="text"],
+.comment textarea {
     border: 1pt solid rgba(195, 184, 185, .4);
     font-size: 14px;
     padding: 10px 15px;
@@ -569,4 +567,58 @@ label[for="ch-register"] {
 .error .button {
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+/* New ad */
+
+.form-newAd {
+    width: 100%;
+    float: none;
+}
+.options input,
+.marriage input[type="radio"] {
+    display: none;
+}
+.options label,
+.marriage label {
+    position: relative;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    padding-left: 20px;
+}
+.options label::before,
+.marriage label::before {
+    content: "\f1db";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.options input[name="pro-cat"]:checked + label::before,
+.marriage input[type="radio"]:checked + label::before {
+    color: #ff9fb9;
+    content: "\f192";
+}
+.options input[name="pro-cat"]:checked + label,
+.marriage input[type="radio"]:checked + label {
+    color: #ff9fb9;
+}
+.single-options,
+.marriage label {
+    display: inline-block;
+    margin: 5px 10px;
+    text-transform: uppercase;
+}
+.form-left select {
+    border: 1pt solid rgba(195, 184, 185, .4);
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.comment textarea {
+    max-width: 400px;
+    width: 100%;
+}
+.marriage,
+.comment {
+    margin-top: 60px;
 }
