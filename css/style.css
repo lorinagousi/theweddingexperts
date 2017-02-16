@@ -16,6 +16,14 @@
 *:focus {
     outline: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #212121;
+}
 input[type="submit"],
 button,
 nav a {
@@ -621,4 +629,166 @@ label[for="ch-register"] {
 .marriage,
 .comment {
     margin-top: 60px;
+}
+.dash-title h3 {
+    text-align: center;
+    margin-top: 50px;
+}
+.dash-prof {
+    background: #fff;
+    padding: 5%;
+}
+.dash-cont {
+    width: 30%;
+    margin-left: 5%;
+    float: left;
+    margin-bottom: 100px;
+}
+.img-cont > * {
+    display: inline-block;
+}
+.img-cont i {
+    color: #ff9fb9;
+    font-size: 24px;
+    margin-left: 5%;
+}
+.rating-color {
+    height: 20px;
+    width: 30%;
+    background: linear-gradient(to right, #ff9fb9, #c6eeeb);
+    float: left;
+}
+.rating {
+    margin-top: 10px;
+}
+.rating > * {
+    display: inline-block;
+}
+.rating-nr {
+    color: #212121;
+    font-size: 14px;
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding-top: 4px;
+}
+.rating h5 {
+    width: 50%;
+    float: left;
+    text-align: right;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 5px;
+}
+.credit {
+    margin-top: 30px;
+}
+.credit h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    float: left;
+    width: 35%;
+    padding-top: 5px;
+}
+.credit h5 span {
+    color: #ff9fb9;
+}
+.credit > * {
+    display: inline-block;
+}
+.credit .button a {
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    background: #c6eeeb;
+    color: #212121;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: background .2s ease-in-out, color .2s ease-in-out;
+    transition: background .2s ease-in-out, color .2s ease-in-out;
+}
+.credit .button a:hover {
+    background: #fff;
+    color: #c6eeeb;
+}
+.credit .button {
+    width: 65%;
+    float: left;
+    text-align: right;
+}
+.dash-prof > h4 i {
+    margin-right: 20px;
+    color: #757575;
+    padding: 0;
+    font-size: 24px;
+    top: 2px;
+    position: relative;
+}
+.share {
+    background: #ffdaea;
+    padding: 5%;
+    margin-top: 20px;
+}
+.share hr {
+    height: 1px;
+    background-color: rgba(117, 117, 117, 0.34);
+    border: none;
+}
+.prof-link {
+    background: #ff9fba;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.available-ads {
+    margin-left: 5%;
+    width: 55%;
+    float: left;
+    margin-bottom: 100px;
+}
+.single-item {
+    background: #fff;
+    width: 46%;
+    margin: 0 2%;
+    float: left;
+    margin-bottom: 20px;
+}
+.single-item h4 {
+    color: #f59db9;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5%;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.17);
+    margin-top: 0;
+}
+.single-item > p {
+    font-size: 14px;
+    padding: 0 10px;
+    color: #757575;
+}
+.single-item .button a {
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    background: #c6eeeb;
+    color: #212121;
+    padding: 8px 16px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: background .2s ease-in-out, color .2s ease-in-out;
+    transition: background .2s ease-in-out, color .2s ease-in-out;
+}
+.single-item .button {
+    text-align: right;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+.single-item .button a:hover {
+    background: #fff;
+    color: #c6eeeb;
 }
