@@ -637,6 +637,7 @@ label[for="ch-register"] {
 .dash-prof {
     background: #fff;
     padding: 5%;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .10);
 }
 .dash-cont {
     width: 30%;
@@ -655,6 +656,7 @@ label[for="ch-register"] {
 .rating-color {
     height: 20px;
     width: 30%;
+    background: -webkit-linear-gradient(left, #ff9fb9, #c6eeeb);
     background: linear-gradient(to right, #ff9fb9, #c6eeeb);
     float: left;
 }
@@ -732,6 +734,7 @@ label[for="ch-register"] {
     background: #ffdaea;
     padding: 5%;
     margin-top: 20px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .10);
 }
 .share hr {
     height: 1px;
@@ -755,6 +758,7 @@ label[for="ch-register"] {
     margin: 0 2%;
     float: left;
     margin-bottom: 20px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .10);
 }
 .single-item h4 {
     color: #f59db9;
