@@ -232,6 +232,7 @@ body {
 .parag h1 {
     font-size: 24px;
     padding-top: 10px;
+    color: #fff;
 }
 .free-but button {
     font-size: 16px;
@@ -795,4 +796,7 @@ label[for="ch-register"] {
 .single-item .button a:hover {
     background: #fff;
     color: #c6eeeb;
+}
+.toggle-cont {
+    display: none;
 }

@@ -64,6 +64,11 @@
             <div class="dash"></div>
 
         </div>
+
+        <div class="toggle-cont">
+            <button id="profile-btn">Προφίλ</button>
+            <button id="ads-btn">Αγγελίες</button>
+        </div>
         <div class="dash-cont">
             <div class="dash-prof">
                 <div class="img-cont">
@@ -72,21 +77,21 @@
                     </figure>
                     <span><i class="fa fa-check-circle" aria-hidden="true"></i></span>
                 </div>
-                <div class="rating-credits">
-                    <div class="rating">
-                        <div class="rating-color"></div>
-                        <div class="rating-nr">4.8/5</div>
-                        <h5>(5 Αξιολογήσεις)</h5>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="credit">
-                        <h5>Μονάδες: <span>40</span></h5>
-                        <div class="button">
-                            <a href="#">Αγορά μονάδων</a>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
+
+                <div class="rating">
+                    <div class="rating-color"></div>
+                    <div class="rating-nr">4.8/5</div>
+                    <h5>(5 Αξιολογήσεις)</h5>
+                    <div class="clearfix"></div>
                 </div>
+                <div class="credit">
+                    <h5>Μονάδες: <span>40</span></h5>
+                    <div class="button">
+                        <a href="#">Αγορά μονάδων</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
 
                 <h4><i class="fa fa-id-card" aria-hidden="true"></i>Δες το προφίλ σου</h4>
                 <h4><i class="fa fa-pencil" aria-hidden="true"></i>Επεξεργασία του προφίλ σου</h4>
@@ -165,6 +170,23 @@
 
         <div class="copy">© 2017 - My ASP.NET Application</div>
     </footer>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        $("#profile-btn").click(function() {
+            $(".dash-cont").css("display", "block");
+            $(".available-ads").css("display", "none");
+            $("#profile-btn").css("display", "none");
+            $("#ads-btn").css("display", "block");
+        })
+
+        $("#ads-btn").click(function() {
+            $(".dash-cont").css("display", "none");
+            $(".available-ads").css("display", "block");
+            $("#ads-btn").css("display", "none");
+            $("#profile-btn").css("display", "block");
+        })
+
+    </script>
 </body>
 
 </html>

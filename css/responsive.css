@@ -10,20 +10,47 @@
         margin-top: 20px;
     }
     .dash-cont {
+        width: 100%;
+        max-width: 320px;
+        float: none;
+        margin: 0 auto;
+        display: none;
+        margin-bottom: 60px;
+    }
+    .available-ads {
         width: 96%;
         margin: 0 auto;
-        margin-bottom: 40px;
         float: none;
+        margin-bottom: 40px;
     }
-    .rating-credits,
-    .img-cont {
-        width: 25%;
-        float: left;
+    .toggle-cont {
+        display: block;
     }
-    .rating > * {
-        width: 100% !important;
-        text-align: center !important;
-        margin-top: 10px !important;
+    #ads-btn {
+        display: none;
+    }
+    .toggle-cont button {
+        margin-left: 4%;
+        margin-bottom: 30px;
+        padding: 5px 20px;
+        border: 0;
+        background: #fe9eb9;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 18px;
+        text-transform: uppercase;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+        -webkit-transition: background .2s ease-in-out, color .2s ease-in-out;
+        transition: background .2s ease-in-out, color .2s ease-in-out;
+    }
+    .toggle-cont button:hover {
+        background: #fff;
+        color: #fe9eb9;
+    }
+    .dash-title h3 {
+        padding-top: 110px;
+        margin-top: 0;
     }
 }
 @media screen and (max-width:768px) {
@@ -159,11 +186,21 @@
     input#ch-register:checked + .form-reg {
         display: block;
     }
+    .single-item {
+        float: none;
+        width: 96%;
+    }
 }
 @media screen and (max-width:480px) {
     label[for="ch-login"],
     label[for="ch-register"] {
         padding: 12px 14px;
         font-size: 14px;
+    }
+    .single-cat {
+        width: 98%;
+    }
+    .search-bar form input[type="submit"] {
+        margin-top: 30px;
     }
 }
