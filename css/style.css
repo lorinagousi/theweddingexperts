@@ -800,3 +800,92 @@ label[for="ch-register"] {
 .toggle-cont {
     display: none;
 }
+
+/*Singlr-ad*/
+
+.main-ad > * {
+    border-bottom: 1pt solid #c3b8b9;
+    padding: 20px;
+}
+.main-ad {
+    width: 55%;
+    float: left;
+    margin-left: 5%;
+    background: #fff;
+}
+.main-ad h1 {
+    color: #f59db9;
+    font-size: 20px;
+}
+.date-time + h4 {
+    width: 40%;
+    float: left;
+    color: #f59db9;
+}
+.date-time {
+    width: 60%;
+    float: left;
+}
+.date-time p {
+    color: #757575;
+}
+.one {
+    background: #ffdaea;
+    display: inline-block;
+    padding: 10px 30px;
+    text-align: center;
+}
+.one i {
+    color: #f59db9;
+    font-size: 45px;
+}
+.one h5 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #757575;
+}
+.info-left .button a {
+    font-size: 14px;
+    font-weight: 600;
+    border: 0;
+    background: #c6eeeb;
+    color: #212121;
+    padding: 8px 16px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: background .2s ease-in-out, color .2s ease-in-out;
+    transition: background .2s ease-in-out, color .2s ease-in-out;
+}
+.info-left .button a:hover {
+    background: #fff;
+    color: #c6eeeb;
+}
+.info-left .button {
+    margin-top: 20px;
+    text-align: center;
+}
+.info-left {
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+.info-right {
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+.info-right i {
+    color: #f59db9;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.info-right p {
+    color: #757575;
+}
+.black-dash {
+    border-bottom: 1pt solid #c3b8b9;
+    width: 150px;
+    margin: 0 auto;
+}
