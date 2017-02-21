@@ -812,6 +812,7 @@ label[for="ch-register"] {
     float: left;
     margin-left: 5%;
     background: #fff;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .10);
 }
 .main-ad h1 {
     color: #f59db9;
@@ -831,18 +832,23 @@ label[for="ch-register"] {
 }
 .one {
     background: #ffdaea;
-    display: inline-block;
     padding: 10px 30px;
-    text-align: center;
+    text-align: left;
+    display: block;
+    border: 1px solid #fff;
 }
 .one i {
     color: #f59db9;
-    font-size: 45px;
+    margin-right: 15px;
+    font-size: 24px;
 }
 .one h5 {
     margin-bottom: 5px;
     margin-top: 10px;
     color: #757575;
+    margin: 20px 0px;
+    font-size: 20px;
+    word-wrap: break-word;
 }
 .info-left .button a {
     font-size: 14px;
@@ -865,6 +871,7 @@ label[for="ch-register"] {
 .info-left .button {
     margin-top: 20px;
     text-align: center;
+    margin-bottom: 10px;
 }
 .info-left {
     width: 60%;
@@ -884,8 +891,36 @@ label[for="ch-register"] {
 .info-right p {
     color: #757575;
 }
+.info-right p:first-child {
+    margin-top: 94px;
+}
 .black-dash {
     border-bottom: 1pt solid #c3b8b9;
     width: 150px;
     margin: 0 auto;
+}
+.questions ul {
+    list-style: none;
+}
+.questions h4 {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.questions h4::before {
+    content: "\f0da";
+    padding-right: 5px;
+    color: #ff9fba;
+    font-size: 18px;
+}
+.questions p {
+    border: 1pt solid #c3b8b9;
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+.questions {
+    border-bottom: none;
 }

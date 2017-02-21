@@ -33,22 +33,24 @@
 
             <div class="toggle-menu">
                 <input type="checkbox" id="mobile">
-                <label for="mobile">Menu</label>
-                <nav id="mobile-menu">
-                    <ul>
-                        <li>
-                            <a href="/">Εγγραφη μελλονυμφου</a></li>
-                        <li><a href="/">Εγγραφη επαγγελματια</a></li>
-                        <li class="login-item">
-                            <a href="/">
-                             Εισοδος
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <label for="mobile"><i class="fa fa-bars" aria-hidden="true"></i></label>
+
             </div>
 
             <div class="clearfix"></div>
+            <input type="checkbox" id="mobile">
+            <nav id="mobile-menu">
+                <ul>
+                    <li>
+                        <a href="/">Εγγραφη μελλονυμφου</a></li>
+                    <li><a href="/">Εγγραφη επαγγελματια</a></li>
+                    <li class="login-item">
+                        <a href="/">
+                             Εισοδος
+                            </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
 
@@ -67,7 +69,7 @@
 
         <div class="toggle-cont">
             <button id="profile-btn">Προφίλ</button>
-            <button id="ads-btn">Αγγελίες</button>
+            <button id="ads-btn">Αγγελία</button>
         </div>
         <div class="dash-cont">
             <div class="dash-prof">
@@ -119,9 +121,9 @@
             <div class="info">
                 <div class="info-left">
                     <div class="com">
-                        <span class="one"><i class="fa fa-address-card" aria-hidden="true"></i><h5>Όνομα</h5></span>
-                        <span class="one"><i class="fa fa-phone" aria-hidden="true"></i><h5>Τηλέφωνο</h5></span>
-                        <span class="one"><i class="fa fa-envelope" aria-hidden="true"></i><h5>E-mail</h5></span>
+                        <span class="one"><h5><i class="fa fa-address-card" aria-hidden="true"></i> Όνομα</h5></span>
+                        <span class="one"><h5><i class="fa fa-phone" aria-hidden="true"></i> Τηλέφωνο</h5></span>
+                        <span class="one"><h5><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</h5></span>
 
                     </div>
                     <div class="button">
@@ -135,6 +137,15 @@
 
                 </div>
                 <div class="clearfix"></div>
+            </div>
+            <div class="questions">
+                <h3>Ερωτήσεις σχετικές με την αγγελία</h3>
+                <ul>
+                    <li>
+                        <h4>Είναι πλέον κοινά παραδεκτό ότι ένας αναγνώστης αποσπάται;</h4>
+                        <p>Το Lorem Ipsum είναι απλά ένα κείμενο.</p>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -183,6 +194,10 @@
             $(".available-ads").css("display", "block");
             $("#ads-btn").css("display", "none");
             $("#profile-btn").css("display", "block");
+        })
+        $("#mobile").change(function() {
+            $("[for=mobile] i").toggleClass("rotate-me");
+            $("nav#mobile-menu").slideToggle();
         })
 
     </script>

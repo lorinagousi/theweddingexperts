@@ -34,8 +34,8 @@
         margin-bottom: 30px;
         padding: 5px 20px;
         border: 0;
-        background: #fe9eb9;
-        color: #fff;
+        background: #c6eeeb;
+        color: #212121;
         border-radius: 10px;
         font-size: 18px;
         text-transform: uppercase;
@@ -46,7 +46,7 @@
     }
     .toggle-cont button:hover {
         background: #fff;
-        color: #fe9eb9;
+        color: #c6eeeb;
     }
     .dash-title h3 {
         padding-top: 110px;
@@ -67,13 +67,13 @@
         padding: 0;
     }
     .logo {
-        width: 100%;
-        float: none;
+        width: auto;
+        float: left;
         margin-top: 0;
-        padding-top: 10px;
+        padding: 10px 0 10px 30px;
     }
     .logo img {
-        max-width: 170px;
+        max-width: 200px;
     }
     #mobile-menu,
     .toggle-menu {
@@ -146,7 +146,11 @@
         padding-left: 0;
     }
     .toggle-menu {
-        padding-bottom: 10px;
+        width: auto;
+        float: right;
+        font-size: 25px;
+        color: #fe9eb9;
+        padding: 13px 30px 10px 0;
     }
     /*Login-Register*/
     .form-reg,
@@ -189,6 +193,23 @@
     .single-item {
         float: none;
         width: 96%;
+    }
+    .info-left,
+    .info-right,
+    .date-time + h4,
+    .date-time {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .one {
+        text-align: center;
+    }
+    .toggle-menu i {
+        transition: all .2s;
+    }
+    .rotate-me {
+        transform: rotate(-90deg);
     }
 }
 @media screen and (max-width:480px) {
