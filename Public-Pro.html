@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Καλώς ήρθατε στο Theweddingexperts.gr</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Roboto:300,400,500,700&amp;subset=greek,greek-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="main-menu">
+            <figure class="logo">
+                <img src="images/logo.png" alt="Wedding logo">
+            </figure>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Εγγραφη μελλονυμφου</a></li>
+                    <li><a href="/">Εγγραφη επαγγελματια</a></li>
+                    <li class="login-item">
+                        <a href="/">
+                            <figure class="login-icon"><img src="images/login.png" alt="ΕΙΣΟΔΟΣ"></figure> Εισοδος
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="toggle-menu">
+                <input type="checkbox" id="mobile">
+                <label for="mobile"><i class="fa fa-bars" aria-hidden="true"></i></label>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <nav id="mobile-menu">
+                <ul>
+                    <li>
+                        <a href="/">Εγγραφη μελλονυμφου</a></li>
+                    <li><a href="/">Εγγραφη επαγγελματια</a></li>
+                    <li class="login-item">
+                        <a href="/">
+                             Εισοδος
+                            </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+
+
+
+
+    <div class="main">
+        <div class="cover">
+            <figure>
+                <img src="/images/pro-pic.jpg" alt="">
+            </figure>
+            <h4>Lorina</h4>
+            <div class="hearts">&lt;3</div>
+            <div class="reviews-share">
+                <p>(4 αξιολογήσεις)</p>
+                <div class="share-public">
+                    <p>Μοιρασου το προφίλ σου</p>
+                    <span>|</span>
+                    <div class="icons-dash">
+                        <ul class="socials">
+                            <li class="fb">
+
+                                <a href="#">
+                                    <div class="social-icom"></div>
+                                </a>
+                            </li>
+                            <li class="tw">
+                                <a href="#">
+                                    <div class="social-icom"></div>
+                                </a>
+
+                            </li>
+                            <li class="g-plus">
+                                <a href="#">
+                                    <div class="social-icom"></div>
+                                </a>
+
+                            </li>
+                            <li class="in">
+                                <a href="#">
+                                    <div class="social-icom"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="profile-nav">
+            <ul>
+                <li>
+                    <label for="bio">Σχετικά</label>
+                </li>
+                <li>
+                    <label for="reviews">Αξιολογήσεις</label>
+                </li>
+                <li>
+                    <label for="">Στοιχεία Επικοινωνίας</label>
+                </li>
+            </ul>
+        </div>
+        <input type="radio" name="tabs" id="reviews" checked>
+        <div class="my-reviews">
+            <div class="single-review">
+                <h1>Φωτογράφοι #68</h1>
+                <h3>Άλεξ Πρίφτης</h3>
+                <div>&lt;3</div>
+                <p>Εξαιρετική Επαγγελματίας</p>
+
+            </div>
+        </div>
+        <input type="radio" name="tabs" id="bio">
+        <div class="my-bio">
+            <p>Είναι πλέον κοινά παραδεκτό ότι ένας αναγνώστης αποσπάται από το περιεχόμενο που διαβάζει, όταν εξετάζει τη διαμόρφωση μίας σελίδας. Η ουσία της χρήσης του Lorem Ipsum είναι ότι έχει λίγο-πολύ μία ομαλή κατανομή γραμμάτων, αντίθετα με το να βάλει κανείς κείμενο όπως 'Εδώ θα μπει κείμενο, εδώ θα μπει κείμενο', κάνοντάς το να φαίνεται σαν κανονικό κείμενο. Πολλά λογισμικά πακέτα ηλεκτρονικής σελιδοποίησης και επεξεργαστές ιστότοπων πλέον χρησιμοποιούν </p>
+        </div>
+    </div>
+    <footer>
+
+        <ul class="socials">
+            <li class="fb">
+                <a href="#">
+                    <div class="social-icom"></div>
+                </a>
+            </li>
+            <li class="tw">
+                <a href="#">
+                    <div class="social-icom"></div>
+                </a>
+
+            </li>
+            <li class="g-plus">
+                <a href="#">
+                    <div class="social-icom"></div>
+                </a>
+
+            </li>
+            <li class="in">
+                <a href="#">
+                    <div class="social-icom"></div>
+                </a>
+            </li>
+        </ul>
+
+        <div class="copy">© 2017 - My ASP.NET Application</div>
+    </footer>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        $("#profile-btn").click(function() {
+            $(".dash-cont").css("display", "block");
+            $(".available-ads").css("display", "none");
+            $("#profile-btn").css("display", "none");
+            $("#ads-btn").css("display", "block");
+        })
+
+        $("#ads-btn").click(function() {
+            $(".dash-cont").css("display", "none");
+            $(".available-ads").css("display", "block");
+            $("#ads-btn").css("display", "none");
+            $("#profile-btn").css("display", "block");
+        })
+        $("#mobile").change(function() {
+            $("[for=mobile] i").toggleClass("rotate-me");
+            $("nav#mobile-menu").slideToggle();
+        })
+
+        var allTabs = $("input[name=tabs]");
+        $(allTabs).each(function() {
+            if ($(this).is(':checked')) {
+                var getId = $(this).attr('id');
+                $(".profile-nav label").removeClass("make-text-white");
+                $("label[for=" + getId + "]").addClass("make-text-white");
+            }
+        })
+
+        $("input[name=tabs]").on('change', function() {
+            var getId = $(this).attr('id');
+            if ($(this).is(':checked')) {
+                $(".profile-nav label").removeClass("make-text-white");
+                $("label[for=" + getId + "]").addClass("make-text-white");
+            }
+        });
+
+    </script>
+</body>
+
+</html>
